@@ -1,62 +1,32 @@
-# Project Title
+# Scalar Pipelined MIPS CPU Architecture
 
-Simple overview of use/purpose.
+In this project I designed a Scalar Pipelined MIPS CPU that was executed on an altera board.
+The CPU Core is capable of performing a variety of instructions from a given MIPS instruction set.
+The architecture includes a MIPS ISA compatible CPU with data and program memory for hosting data and code and a standard MIPS register file. 
+The top level and the MIPS core are structural and a single clock is used in the design.
+In addition, the architecture includes hazard detection unit, forwarding unit, flushing and a single delay slot support.  
+The figure below illustrates the design.  
+
+    
+
+<img width="492" alt="image" src="https://github.com/Michaelkedik/Scalar-Pipelined-MIPS-CPU/assets/136968696/f658c3fe-47dd-4d49-8cbe-ff1a08bdd170">
+
+
+
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
 
-## Getting Started
+The repositories in this project serve the following purposes:
 
-### Dependencies
+**VHDL:** This repository contains VHDL codes for the top entity and components. These codes can be compiled using ModelSim and Quartus.
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+**DOC:** This repository contains project documentation and a README file that provides an explanation of the VHDL files' purpose.
 
-### Installing
+**CODE:** This repository contains assembly code used for verifying the design's functionality.
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+**TB:** This repository contains Testbench files that were used for ModelSim verification of the design.
 
-### Executing program
+**SIM:** This repository contains ".do" files used for ModelSim simulation.
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+**QUARTUS:** This repository contains project files such as ".sof," SDC, and STP files, which are used for Quartus compilation and verification of the design.
