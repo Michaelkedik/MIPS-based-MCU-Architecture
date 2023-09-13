@@ -1,0 +1,27 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_SIGNED.ALL;
+
+ENTITY D_latch IS
+    PORT ( D, EN, CLR : IN  STD_LOGIC;
+           Q          : OUT STD_LOGIC
+	);
+END D_latch;
+
+ARCHITECTURE Behavioral OF D_latch IS
+
+    SIGNAL DATA : STD_LOGIC;
+	
+BEGIN
+	PROCESS (EN, CLR) BEGIN
+		IF (CLR = '1') THEN 
+			DATA <= '0';
+		ELSIF (RISING_EDGE(EN)) THEN
+			DATA <= D;
+			END IF;
+	END PROCESS;
+	
+    Q <= DATA;
+
+END Behavioral;
