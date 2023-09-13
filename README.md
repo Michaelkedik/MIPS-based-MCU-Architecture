@@ -15,11 +15,13 @@ The figure below illustrates the design.
 
 <img width="587" alt="image" src="https://github.com/Michaelkedik/MIPS-based-MCU-Architecture/assets/136968696/3083c61a-39bc-4e72-8d52-b9b1ad8c3064">
 
-sadasdasda
+The Basic Timer was designed to facilitate standard timer functions as well as the generation of PWM signals through the utilization of the output compare mode.
+The figure below illustrates the design.
 
 <img width="343" alt="image" src="https://github.com/Michaelkedik/MIPS-based-MCU-Architecture/assets/136968696/88cd7c88-506c-472c-922c-26f82ac0792b">
 
-dasdasdasdas
+The Interrupt Controller was specifically crafted to manage a range of interrupt types, including those originating from the basic timer.
+The figure below illustrates the design.
 
 <img width="322" alt="image" src="https://github.com/Michaelkedik/MIPS-based-MCU-Architecture/assets/136968696/65eac7dd-d102-43a5-a889-0fec9067a02e">
 
@@ -30,7 +32,7 @@ dasdasdasdas
 
 The repositories in this project serve the following purposes:
 
-**VHDL:** This repository contains VHDL codes for the top entity and components. These codes can be compiled using ModelSim and Quartus via change of basic parameters.
+**DUT:** This repository contains VHDL codes for the top entity and components. These codes can be compiled using ModelSim and Quartus via change of basic parameters.
 
 **DOC:** This repository contains project documentation and a README file that provides an explanation of the VHDL files' purpose.
 
