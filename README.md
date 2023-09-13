@@ -9,16 +9,19 @@ The figure below illustrates the design.
 
 <img width="540" alt="image" src="https://github.com/Michaelkedik/MIPS-based-MCU-Architecture/assets/136968696/837e8cb1-fff2-49c5-8f2c-a32a4f1bea7e">
 
+
 The GPIO is a simple decoder with buffer registers mapped to data address (Higher than data memory) that enables the CPU to output data to LEDs and 7-Segment and to read the Switches state.
 The Data Address Space is 32-bit WORD aligned where the address word is 0 ... 0 A11 ... A0 with partial mapping that contains Data Memory and Memory Mapped I/O.
 The figure below illustrates the design.
 
 <img width="587" alt="image" src="https://github.com/Michaelkedik/MIPS-based-MCU-Architecture/assets/136968696/3083c61a-39bc-4e72-8d52-b9b1ad8c3064">
 
+
 The Basic Timer was designed to facilitate standard timer functions as well as the generation of PWM signals through the utilization of the output compare mode.
 The figure below illustrates the design.
 
 <img width="343" alt="image" src="https://github.com/Michaelkedik/MIPS-based-MCU-Architecture/assets/136968696/88cd7c88-506c-472c-922c-26f82ac0792b">
+
 
 The Interrupt Controller was specifically crafted to manage a range of interrupt types, including those originating from the basic timer.
 The figure below illustrates the design.
