@@ -1,17 +1,15 @@
-# Scalar Pipelined MIPS CPU Architecture
+# MIPS based MCU Architecture
 
-In this project I designed a Scalar Pipelined MIPS CPU that was executed on an altera board.
-The CPU Core is capable of performing a variety of instructions from a given MIPS instruction set.
-The architecture includes a MIPS ISA compatible CPU with data and program memory for hosting data and code and a standard MIPS register file. 
-The top level and the MIPS core are structural and a single clock is used in the design.
-In addition, the architecture includes hazard detection unit, forwarding unit, flushing and a single delay slot support.  
-The figure below illustrates the design.  
+In this project, I developed an MCU based on the MIPS architecture, incorporating Memory-Mapped I/O, a Basic Timer, and an Interrupt Controller.
+The CPU uses a Single Cycle MIPS architecture and is capable of performing full instruction set of simple MIPS.
+The design is located on Altera Board and the MIPS architecture is Harvard architecture in order to increase the throughput.
+The architecture includes a MIPS ISA compatible CPU with data and program memory for hosting data and code.
+The CPU have a standard MIPS register file. The top level and the MIPS core are structural. 
+The figure below illustrates the design.
 
-    
+<img width="540" alt="image" src="https://github.com/Michaelkedik/MIPS-based-MCU-Architecture/assets/136968696/837e8cb1-fff2-49c5-8f2c-a32a4f1bea7e">
 
-<img width="492" alt="image" src="https://github.com/Michaelkedik/Scalar-Pipelined-MIPS-CPU/assets/136968696/f658c3fe-47dd-4d49-8cbe-ff1a08bdd170">
-
-
+The GPIO is a simple decoder with buffer registers mapped to data address (Higher than data memory) that enables the CPU to output data to LEDs and 7-Segment and to read the Switches state.
 
 
 ## Description
